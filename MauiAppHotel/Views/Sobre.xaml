@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre" NavigationPage.HasNavigationBar="False" 
+             BackgroundColor="{StaticResource Gray200}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="20"
+                         Spacing="20">
+
+        <!-- Título com a mesma fonte da tela principal -->
+        <Label Text="Sobre o App"
+               FontFamily="Caveat-Bold"
+               FontSize="50"
+               HorizontalOptions="Center"
+               TextColor="{StaticResource Primary}" />
+
+        <Frame Padding="20" Margin="10">
+            <VerticalStackLayout Spacing="15" HorizontalOptions="Center">
+
+                <Label Text="Desenvolvedor"
+                       FontFamily="Caveat-Bold"
+                       TextTransform="Uppercase"
+                       FontSize="Subtitle"
+                       HorizontalOptions="Center"
+                       TextColor="{StaticResource Primary}"/>
+
+                <!-- Nome do desenvolvedor -->
+                <Label Text="João Flávio Diniz" 
+                       FontSize="18"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+
+                <Label Text="Ano de Desenvolvimento"
+                       FontFamily="Caveat-Bold"
+                       TextTransform="Uppercase"
+                       FontSize="Subtitle"
+                       Margin="0, 15, 0, 0"
+                       HorizontalOptions="Center"
+                       TextColor="{StaticResource Primary}"/>
+
+                <Label Text="2026" 
+                       FontSize="18"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+
+                <!-- Botão para retornar à tela anterior -->
+                <Button Text="Voltar" FontFamily="Caveat-Bold" FontSize="24"
+                        Margin="0, 30, 0, 0"
+                        WidthRequest="150"
+                        Clicked="OnVoltarClicked" />
+
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>
